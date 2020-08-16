@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+# deployment instructions: https://towardsdatascience.com/from-streamlit-to-heroku-62a655b7319
+
 @st.cache
 def get_data():
     return pd.read_csv("http://data.insideairbnb.com/austria/vienna/vienna/2020-06-16/visualisations/listings.csv")
